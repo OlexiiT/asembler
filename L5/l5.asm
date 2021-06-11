@@ -128,7 +128,7 @@ M_Init
 				mov al, [array2Db+si]
 				mov dl, [array2Db+si+1]
 				cmp al, dl
-				jb noswap
+				jnb noswap
 				mov [array2Db+si], dl
 				mov [array2Db+si+1], al
 			noswap:
